@@ -52,12 +52,12 @@
 
 .chat__footer {
 	text-align: center;
-    font-weight: 400;
-    padding: 16px;
-    position: fixed;
-    bottom: -8px;
-    width: -webkit-fill-available;
-    font-size: small;
+	font-weight: 400;
+	padding: 16px;
+	position: fixed;
+	bottom: -8px;
+	width: -webkit-fill-available;
+	font-size: small;
 	color: black;
 }
 
