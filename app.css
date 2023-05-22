@@ -1,0 +1,135 @@
+.pop__up {
+	max-height: 80vh;
+	height: fit-content;
+	min-height: 200px;
+}
+
+.chat {
+	border-radius: 8px;
+	max-height: calc(100vh - 62px);
+	min-height: 160px;
+	height: 100vh;
+	display: grid;
+	grid-template-rows: 1fr 0px;
+	background-color: #ffffff;
+}
+
+.chat__wrapper {
+	max-height: fit-content;
+	border-radius: 8px;
+	padding: var(--spacing-16);
+}
+
+.chat__icon {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 0 6px #aaa;
+	margin-right: 8px;
+}
+
+.chat__content {
+	max-height: calc(100vh - 150px);
+	height: fit-content;
+	overflow-y: auto;
+	padding: 8px;
+	line-height: 1.5rem;
+	border-radius: 8px;
+	--chat-bg-opacity: 1;
+	background-color: rgb(249 250 251 / var(--chat-bg-opacity));
+}
+
+.chat__output {
+	border-bottom: 1px solid var(--grey);
+	--chat-text-opacity: 1;
+	color: rgb(17 24 39 / var(--chat-text-opacity));
+	display: flex;
+	align-items: center;
+	padding: var(--spacing-2);
+}
+
+.chat__footer {
+	text-align: center;
+	font-weight: 400;
+	padding: var(--spacing-8);
+}
+
+.chat__footer a {
+	text-decoration: none;
+}
+
+.chat__ng-logo {
+	height: 30px;
+	width: 30px;
+}
+
+.chat__prompt {
+	padding: var(--spacing-16);
+	display: flex;
+	position: fixed;
+	bottom: 30px;
+	width: -webkit-fill-available;
+}
+
+.chat__prompt-input {
+	width: inherit;
+	border: none;
+	background-color: var(--light-grey);
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+	padding: var(--spacing-16);
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	color: rgb(17 24 39 / var(--chat-text-opacity));
+	font-size: 14px;
+}
+
+.chat__prompt-input:focus-within {
+	outline: none;
+}
+
+button.chat__ask {
+	background-color: #3498db;
+	color: #ffffff;
+	border: 1px solid #2980b9;
+	border-left: none;
+	padding: var(--spacing-12);
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+	cursor: pointer;
+}
+
+button.chat__ask:hover {
+	background-color: #2980b9;
+}
+
+button.chat__ask:disabled {
+	background-color: #aaa;
+	pointer-events: none;
+	border: none;
+}
+
+.spinner {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: inherit;
+	width: inherit;
+}
+
+.spinner-inner {
+	border: 2px solid #fff;
+	border-radius: 50%;
+	border-top: 2px solid #3498db;
+	border-right: 2px solid #3498db;
+	width: 30px;
+	height: 30px;
+	-webkit-animation: spin 1s linear infinite;
+	animation: spin 1s linear infinite;
+}
+
