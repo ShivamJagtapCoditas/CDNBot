@@ -4,6 +4,10 @@
 	min-height: 200px;
 }
 
+p{
+	color:black;
+}
+
 .chat {
 	border-radius: 8px;
 	max-height: calc(100vh - 62px);
