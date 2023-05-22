@@ -52,17 +52,18 @@
 
 .chat__footer {
 	text-align: center;
-	font-weight: 400;
-	padding: 16px;
-	position: fixed;
-	bottom: -8px;
-	width: -webkit-fill-available;
-	font-size: small;
+    font-weight: 400;
+    padding: 16px;
+    position: fixed;
+    bottom: -8px;
+    width: -webkit-fill-available;
+    font-size: small;
 	color: black;
 }
 
 .chat__footer a {
 	text-decoration: none;
+	color:black;
 }
 
 .chat__ng-logo {
@@ -207,4 +208,8 @@ code {
 .chat__query {
 	padding: 16px;
 	padding-left: 0px;
+}
+
+a{
+	color: #424141;
 }
