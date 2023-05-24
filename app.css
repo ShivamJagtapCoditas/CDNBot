@@ -238,6 +238,16 @@ a{
 
 @media screen and (max-width: 767px) {
  .chat__markdown{
-    width: calc(100vw - 52%);	
+    width: calc(100vw - 56%);
+}
+.chat__content{
+    width: calc(100vh - 32%);
+}
+@media screen and (max-width: 637px) {
+ .chat__markdown{
+    width: calc(100vw - 56%);	
+}
+.chat__content{
+    width: calc(100vh - 41%);
 }
 }
