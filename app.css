@@ -159,10 +159,6 @@ button.chat__ask:disabled {
 	}
 }
 
-#markdown-container {
-	min-height: calc(100vh - 212px);
-}
-
 .chat-bg-gray {
 	background-color: rgb(249 250 251 / 1);
 }
