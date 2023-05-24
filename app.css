@@ -235,3 +235,9 @@ code {
 a{
 	color: #424141;
 }
+
+@media screen and (max-width: 767px) {
+ .chat__markdown{
+    width: calc(100vw - 52%);	
+}
+}
